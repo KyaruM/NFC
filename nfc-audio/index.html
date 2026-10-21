@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频播放</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f7fa;
+        }
+        .container {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom:24px;
+            color:#333;
+        }
+        audio {
+            width: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>点击播放录音</h2>
+        <!-- 修改这里src，换成你的音频文件名 -->
+        <audio controls>
+            <source src="audio.m4a" type="audio/m4a">
+            你的浏览器不支持音频播放
+        
+    </div>
+</body>
+</html>
